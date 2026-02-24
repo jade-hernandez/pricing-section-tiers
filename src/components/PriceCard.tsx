@@ -8,26 +8,27 @@ export const PriceCard = ({
   title,
   description,
   price,
+  subText,
   features,
   isFeatured = false,
   headingText = "",
   variant = "default",
-  buttonVariant = "primary"
+  buttonVariant = "primary",
+  billingCycle
 }: IPriceCardProps) => {
   return (
     <div
       className={cn(
-        "relative flex w-full max-w-[384px] flex-col justify-between rounded-md border border-neutral-200 bg-white shadow-sm",
+        "relative flex w-full flex-col justify-between rounded-md border border-neutral-200 bg-white shadow-sm",
         isFeatured ? "border-indigo-600" : ""
       )}
     >
       {isFeatured && headingText && (
-        <div className='h-fit rounded-t-lg bg-indigo-50 py-4 text-center text-xl font-semibold text-indigo-700'>
+        <div className='rounded-t-lg bg-indigo-50 py-4 text-center text-xl font-semibold text-indigo-700'>
           {headingText}
         </div>
       )}
-
-      <div className='flex h-full flex-col justify-center space-y-8 p-8'>
+      <div className='flex h-full flex-col justify-center gap-8 p-4 md:p-8'>
         <div className='flex h-full flex-col space-y-8'>
           <div className='flex flex-col space-y-2'>
             <h2 className='text-2xl font-semibold'>{title}</h2>
@@ -36,8 +37,9 @@ export const PriceCard = ({
 
           <Pricing
             price={price}
-            subText='Billed monthly'
+            subText={subText}
             variant={variant}
+            billingCycle={billingCycle}
           />
 
           <CheckList items={features} />
@@ -47,7 +49,7 @@ export const PriceCard = ({
           textContent='Buy now'
           variant={buttonVariant}
           size='lg'
-          className='mt-auto w-full justify-center text-center'
+          className='w-full justify-center text-center'
         />
       </div>
     </div>

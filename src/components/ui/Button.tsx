@@ -1,9 +1,8 @@
-// src/components/ui/button.tsx
 import { forwardRef } from "react";
 import type { ButtonHTMLAttributes } from "react";
 import type { VariantProps } from "class-variance-authority";
 import { cn } from "../../utils/utils";
-import { buttonVariants } from "./ButtonVariants";
+import { buttonVariants } from "./buttonVariants";
 
 export interface ButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariants> {

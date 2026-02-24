@@ -13,8 +13,9 @@ const pricingVariants = cva("", {
   }
 });
 
+export type TBillingCycle = "month" | "year";
+
 type TCurrency = "$" | "€";
-type TBillingCycle = "month" | "year";
 type TVariant = "default" | "highlighted";
 
 export interface IPricingProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -55,6 +56,7 @@ const Pricing = ({
         <span className={cn("text-5xl font-semibold", pricingVariants({ variant }))}>
           {formattedPrice}
         </span>
+
         <span className={cn("text-base", pricingVariants({ variant }), "ml-1")}>
           / {billingCycle}
         </span>
