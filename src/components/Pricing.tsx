@@ -49,7 +49,7 @@ const Pricing = ({
 
   return (
     <div
-      className={cn("flex flex-col", className)}
+      className={cn("flex flex-col gap-2", className)}
       {...props}
     >
       <div className='flex items-baseline'>
@@ -61,7 +61,7 @@ const Pricing = ({
           / {billingCycle}
         </span>
       </div>
-      {subText && <span className='mt-1 text-base text-neutral-600'>{subText}</span>}
+      {subText && <span className='text-base text-neutral-600'>{subText}</span>}
     </div>
   );
 };

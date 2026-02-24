@@ -22,14 +22,12 @@ export interface ICheckListProps {
 }
 
 export const CheckList = ({ items }: ICheckListProps) => {
-  const lastItemIndex = items.length - 1;
   return (
-    <ul className={cn("space-y-5")}>
+    <ul className={cn("flex min-h-45 flex-col gap-5")}>
       {items.map((item, index) => (
         <CheckListItem
           key={index}
           content={item}
-          className={cn(index === lastItemIndex ? "pb-5" : "")}
         />
       ))}
     </ul>

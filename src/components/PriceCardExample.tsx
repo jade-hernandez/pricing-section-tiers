@@ -71,7 +71,7 @@ export const PriceCardExample = () => {
   const [isAnnual, setIsAnnual] = useState(false);
 
   return (
-    <div className='flex flex-col items-center gap-12 p-3 md:gap-16 md:p-4 lg:p-24'>
+    <div className='flex flex-col items-center gap-12 bg-white p-3 py-12 md:gap-16 md:p-4 md:py-16 lg:p-24'>
       <div className='flex flex-col items-center gap-10 text-center'>
         <div className='flex flex-col gap-5 md:px-8 lg:px-40'>
           <div className='flex flex-col gap-3'>
