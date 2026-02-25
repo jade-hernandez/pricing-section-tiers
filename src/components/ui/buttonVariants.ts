@@ -4,14 +4,14 @@ export const buttonVariants = cva("flex items-center font-medium", {
   variants: {
     variant: {
       primary: [
-        "bg-indigo-700 fill-white text-white",
+        "bg-indigo-700 fill-white text-white cursor-pointer",
         "shadow-[0_1px_3px_rgba(0,0,0,0.10),0_1px_2px_rgba(0,0,0,0.06)]",
         "hover:bg-indigo-800 hover:shadow-[0_1px_3px_rgba(0,0,0,0.10),0_1px_2px_rgba(0,0,0,0.06)]",
         "focus:bg-indigo-800 focus:shadow-[0_0px_0px_4px_rgba(68,76,231,0.12)]",
         "disabled:cursor-not-allowed disabled:bg-neutral-100 disabled:fill-neutral-400 disabled:text-neutral-400"
       ],
       secondary: [
-        "border-[0.5px] border-neutral-200 bg-white fill-neutral-900 text-neutral-900",
+        "border-[0.5px] border-neutral-200 bg-white fill-neutral-900 text-neutral-900 cursor-pointer",
         "shadow-[0_1px_3px_rgba(0,0,0,0.10),0_1px_2px_rgba(0,0,0,0.06)]",
         "hover:border hover:border-neutral-200 hover:bg-neutral-50",
         "hover:shadow-[0_1px_3px_rgba(0,0,0,0.10),0_1px_2px_rgba(0,0,0,0.06)]",
@@ -20,25 +20,25 @@ export const buttonVariants = cva("flex items-center font-medium", {
         "disabled:cursor-not-allowed disabled:bg-neutral-100 disabled:fill-neutral-400 disabled:text-neutral-400"
       ],
       tertiary: [
-        "bg-transparent fill-indigo-700 text-indigo-700",
+        "bg-transparent fill-indigo-700 text-indigo-700 cursor-pointer",
         "focus:bg-neutral-50 focus:shadow-[0_0px_0px_4px_rgba(68,76,231,0.12)]",
         "disabled:cursor-not-allowed disabled:fill-neutral-400 disabled:text-neutral-400"
       ],
       linkColor: [
-        "bg-transparent fill-indigo-700 text-indigo-700",
+        "bg-transparent fill-indigo-700 text-indigo-700 cursor-pointer",
         "hover:bg-transparent hover:fill-indigo-800 hover:text-indigo-800",
         "focus:fill-indigo-800 focus:text-indigo-800",
         "focus:shadow-[0_0px_0px_4px_rgba(68,76,231,0.12)]",
         "disabled:cursor-not-allowed disabled:fill-neutral-400 disabled:text-neutral-400"
       ],
       linkGray: [
-        "bg-transparent fill-neutral-600 text-neutral-600",
+        "bg-transparent fill-neutral-600 text-neutral-600 cursor-pointer",
         "hover:bg-transparent hover:fill-neutral-900 hover:text-neutral-900",
         "focus:text-neutral-900 focus:shadow-[0_0px_0px_4px_rgba(68,76,231,0.12)]",
         "disabled:cursor-not-allowed disabled:fill-neutral-400 disabled:text-neutral-400"
       ],
       destructive: [
-        "bg-red-600 fill-white text-white",
+        "bg-red-600 fill-white text-white cursor-not-allowed",
         "hover:bg-red-700 focus:bg-red-700",
         "focus:shadow-[0_0px_0px_1px_rgba(217,45,32,1),0_0px_0px_4px_rgba(217,45,32,0.12)]",
         "disabled:cursor-not-allowed disabled:bg-neutral-400"
@@ -46,7 +46,7 @@ export const buttonVariants = cva("flex items-center font-medium", {
     },
     size: {
       md: "gap-1 rounded px-4 py-[10px] text-sm",
-      lg: "gap-[6px] rounded px-[18px] py-[10px] text-base",
+      lg: "gap-[6px] rounded px-[20px] py-[12px] text-base",
       xl: "gap-[6px] rounded px-[22px] py-3 text-base",
       "2xl": "gap-[10px] rounded px-[26px] py-4 text-lg",
       "icon-2xl": "gap-[10px] rounded p-4 text-lg",

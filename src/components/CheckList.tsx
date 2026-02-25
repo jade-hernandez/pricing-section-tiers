@@ -23,7 +23,7 @@ export interface ICheckListProps {
 
 export const CheckList = ({ items }: ICheckListProps) => {
   return (
-    <ul className={cn("flex min-h-45 flex-col gap-5")}>
+    <ul className={cn("flex flex-col gap-5 md:min-h-45")}>
       {items.map((item, index) => (
         <CheckListItem
           key={index}

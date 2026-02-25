@@ -24,7 +24,7 @@ export const PriceCard = ({
       )}
     >
       {isFeatured && headingText && (
-        <div className='rounded-t-lg bg-indigo-50 py-4 text-center text-xl font-semibold text-indigo-700 shadow-[0_4px_4px_rgba(0,0,0,0.25)]'>
+        <div className='mb-4 rounded-t-lg bg-indigo-50 py-4 text-center text-xl font-semibold text-indigo-700 shadow-[0_4px_4px_rgba(0,0,0,0.25)] md:mb-0'>
           {headingText}
         </div>
       )}
